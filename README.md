@@ -27,6 +27,12 @@ Additionally this project uses the following packages:
 - [NuGetForUnity](https://github.com/GlitchEnzo/NuGetForUnity)  
   For fetching LLAMASharp and all it's dependencies from NuGet.
 
+## How to run the project
+1. Clone this repository
+2. Download [Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf](https://huggingface.co/lmstudio-community/Meta-Llama-3.1-8B-Instruct-GGUF/tree/main) and put it into `Assets/StreamingAssets/models` folder
+3. The project should work.
+    - If it does not, likely problem is that you need to change the `LLAMASharp.Backend.Cpu` runtime. From NuGet package manager, uninstall and reinstall it (choose same version as LLAMASharp). If there are duplication errors, delete unnecessary runtimes in `Assets/Packages/LLAMASharp.Backend.Cpu` folder.
+
 ## Setting up a project from scratch
 
 
